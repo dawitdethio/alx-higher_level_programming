@@ -13,10 +13,11 @@ def lastDigit(n):
 def verif(n=number):
     if (n > 5):
         return (" and is greater than 5")
+    
     elif (n == 0):
         return (" and is 0")
-    elif (n != 0 and n < 6):
-        return (" and is less than 6 and not 0")
     
+    elif (n != 0 and n < 6):
+        return (" and is less than 6 and not 0") 
     
 print("Last digit of {} is {}{}".format(number, lastDigit(number), verif()))
