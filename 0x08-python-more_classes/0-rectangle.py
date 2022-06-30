@@ -1,7 +1,7 @@
 #!/usr/bin/python3
+""" This module defines a class 'Rectangle' """
 
 
 class Rectangle:
-    "This is my custom class for Rectangle"
-    def __init__(self):
-        pass
+    """ An empty class 'Rectangle'. """
+    pass
