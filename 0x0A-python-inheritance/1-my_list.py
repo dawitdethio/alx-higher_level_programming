@@ -1,17 +1,17 @@
 #!/usr/bin/python3
-"""
-    class MyList that inherits from list
-"""
+# 2-is_same_class.py
+"""Defines a class-checking function."""
 
 
-class MyList(list):
+def is_same_class(obj, a_class):
+    """Check if an object is exactly an instance of a given class.
+    Args:
+        obj (any): The object to check.
+        a_class (type): The class to match the type of obj to.
+    Returns:
+        If obj is exactly an instance of a_class - True.
+        Otherwise - False.
     """
-        prints the list, but sorted (ascending sort)
-        all the elements of the list will be of type <int>
-    """
-    def print_sorted(self):
-        print(sorted(self))
-
-if __name__ == "__main__":
-    import doctest
-    doctest.testfile("tests/1-my_list.txt")
+    if type(obj) == a_class:
+        return True
+    return False
